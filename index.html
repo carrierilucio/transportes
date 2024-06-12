@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte de passageiros</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <a onclick="calculaCesta()" class="car" href="#">Calcula<img src="imagens/icono.jpg" id="img8" alt="Calculador de distancia"></a>
+        <h1>Transporte Privado</h1>
+        <button onclick="abreTelalogin()" id="Log">Login</button>
+    </header>
+    <main class="container">
+        <section class="products-container">
+            <h2>Escolha a Viagem que deseja</h2>
+            <article class="card">
+                <div class="product-image" id="img-1"></div>
+                <h3>Traslados Balneario Camboriu</h3>
+                <p>Qtd Malas: </p><input type="number" min="1" max="5" id="qtd-1"></p>
+                <p>R$ <span id="ha" class="bold"></span></p>
+                <a onclick="trasladosCamboriu()" class="btn" href="" target="_blank">Comprar</a>
+            </article>
+            <article class="card">
+                <div class="product-image" id="img-2"></div>
+                <h3>Traslados Gerais</h3>
+                <p>Qtd Malas: <input type="number" min="1" max="10" id="qtd-2"></p>
+                <p>R$ <span id="th" class="bold"></span></p>
+                <a onclick="trasladosGerais()" class="btn" href="" target="_blank">Comprar</a>
+            </article>
+            <article class="card">
+                <div class="product-image" id="img-3"></div>
+                <h3>Tours</h3>
+                <p>Qtd Malas: <input type="number" min="1" max="10" id="qtd-3"></p>
+                <p>R$ <span id="hu" class="bold"></span></p>
+                <a onclick="compraHulk()" class="btn" href="" target="_blank">Comprar</a>>
+                    
+            </article>
+            <article class="card">
+                <div class="product-image" id="img-4"></div>
+                <h3>Traslados para Aeroporto</h3>
+                <p>Qtd Malas: <input type="number" min="1" max="10" id="qtd-4"></p>
+                <p>R$ <span id="hf" class="bold"></span></p>
+                <a onclick="compraHF()" class="btn" href="" target="_blank">Comprar</a>>
+                    
+
+        </section>
+    </main>
+    <footer id="rodape">
+        <h2>informaçoes sobre o site</h2>
+        <p><span class="bold">Transporte Privado</span>&copy; 2024</p>
+
+    </footer>
+</body>
+</html>
