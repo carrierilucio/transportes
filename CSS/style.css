@@ -2,22 +2,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family:Arial, Helvetica, sans-serif;
 }
 header{
     background-color: black;
     color: #fff;
-    padding: 5px;
+    padding: 4px;
     text-align: center;
     border-bottom: 3px solid white;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+
 }
 h1{
-    color: rgb(48, 48, 216);
-    text-shadow: 2px 2px #eee;
+    color: rgb(250, 249, 249);
+    text-shadow: 2px 2px #0f0a0a;
+    text-transform: capitalize;
+    text-decoration: underline;
 }
 .container{
-    background-color: #eee;
-    min-height: 60vh;
+    background-color: #070707;
+    min-height: 50vh;
 }
 
 .products-container{
@@ -25,37 +31,56 @@ h1{
     margin: 0 auto;
 }
 
+
 .car{
-    display: block;
+    display: inline-flex;
     width: 5%;
-    color: #fff;
+    color: #f3f0f0;
     text-align: center;
     text-transform: lowercase;
     text-decoration: none;
     background-color: transparent;
     padding: 2px;
-    margin-left: 95%;
+    margin-left: 60%;
+}
+
+.hcont{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    
+}
+#clog{
+    display: block;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: right;
+    background-color: transparent;
+    text-transform: capitalize;
+    border-color: transparent;
+    
 }
 #log{
     display: block;
     width: 25%;
-    text-align: center;
-    color: #eee;
+    text-align: right;
+    color: #fafafa;
+    margin-right: 15px;
     padding: 0px;
     border: none;
     font-size: 20px;
     text-transform: capitalize;
-    text-decoration: underline;
     background-color: transparent;
     transition: 0.5s;
     margin-left: 0%;
 }
 
 .card{
-    width: 31%;
+    width: 33%;
     display: inline-block;
-    margin: 1% 1%;
-    padding: 15px;
+    margin: 2% 2%;
+    padding: 14px;
 }
 
 .product-image{
@@ -70,9 +95,11 @@ h1{
 
 #img-1{
     background-image: url(../imagens/balneario.webp);
+    margin-top: 40px;
 }
 #img-2{
     background-image: url(../imagens/floripa.webp);
+    margin-bottom: 35px;
 }
 #img-3{
     background-image: url(../imagens/betocarrero.jpg);
@@ -83,19 +110,20 @@ h1{
 h3{
     margin-bottom: 10px;
     color: black;
-    border-left: 5px solid white;
+    border-left: 5px solid rgb(8, 8, 8);
     padding-left: 7px;
     font-size: 24px;
 }
 
 .card p{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 .bold{
     font-weight: bold;
 }
 .btn{
+    margin-top: 10px;
     display: block;
     width: 100%;
     text-align: center;
@@ -112,27 +140,65 @@ h3{
     background-color: #070347;
 }
 
-#rodape{
+.rodape{
     background-color: black;
     color: #fff;
-    border-top: 3px solid white;
+    border-top: 2px solid white;
     text-align: center;
-    padding: 20px;
+    padding-bottom: 10px;
+    
+   
+
 }
 main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
     background-image: url(../imagens/Florian.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 170vh;
+    height: 220vh;
     margin: 0%;
 }
+.altura2{
+    color: #fff;
+    padding: 12px;
+}
 h2{
+   padding-top: 130px;
+   padding-left: 40px;
+    color: black;
     background-size: cover;
     background-position: center;
 }
 #img8{
     background-size: cover;
     
-    height: 10vh;
+    height: 5vh;
+}
+#valor_tours{
+    background-color: rgba(245, 245, 245, 0.39);
+    border-color: transparent;
+    font-size: 20px;
+    visibility: visible;
+}
+#valor_balneario{
+    background-color: rgba(245, 245, 245, 0.39);
+    border-color: transparent;
+    font-size: 20px;
+    visibility: visible;
+}
+#valor_traslados{
+    background-color: rgba(245, 245, 245, 0.39);
+    border-color: transparent;
+    font-size: 20px;
+    visibility: visible;
+}
+#valor_aeroporto{
+    background-color: rgba(245, 245, 245, 0.39);
+    border-color: transparent;
+    font-size: 20px;
+    visibility: visible;
+
 }
